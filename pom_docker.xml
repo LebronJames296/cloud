@@ -99,7 +99,7 @@
         <configuration>
           <!--镜像名称-->
           <imageName>${project.artifactId}</imageName>
-          <dockerDirectory>/src/main/resources</dockerDirectory>
+          <dockerDirectory>${project.basedir}/src/main/resources</dockerDirectory>
           <imageTags>
             <imageTag>${project.version}</imageTag>
           </imageTags>
