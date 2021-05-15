@@ -1,4 +1,4 @@
-FROM maven:3 AS bd
+FROM registry.cn-hangzhou.aliyuncs.com/acs/maven:3-jdk-8 AS bd
 WORKDIR /code
 COPY ./ /code
 RUN mvn package -Dmaven.test.skip=true
