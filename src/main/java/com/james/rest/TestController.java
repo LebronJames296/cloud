@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.security.PublicKey;
+
 @RestController
 @RequestMapping("/user")
 public class TestController {
@@ -25,5 +27,11 @@ public class TestController {
     @GetMapping("/hello")
     public String hello(){
         return "hello, daocloud";
+    }
+
+
+    @GetMapping("/")
+    public String dooo(){
+        return "keep in faith";
     }
 }
