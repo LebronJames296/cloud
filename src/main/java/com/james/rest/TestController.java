@@ -21,4 +21,9 @@ public class TestController {
 
         return user;
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello, daocloud";
+    }
 }
